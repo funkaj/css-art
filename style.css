@@ -1,0 +1,90 @@
+body {
+	background: #fed550;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ice-cream {
+	width: 240px;
+	height: 350px;
+	background: #f982bf;
+	border-radius: 150px 150px 40px 40px;
+	border-top: #ff98cc solid 8px;
+}
+
+.glare {
+	width: 35px;
+	height: 70px;
+	background: #ff98cc;
+	border-radius: 50px / 100px;
+}
+
+.eye {
+	width: 18px;
+	height: 18px;
+	background: #ff2995;
+	border-radius: 100px;
+}
+
+.mouth {
+	width: 75px;
+	height: 25px;
+	background: #ff2995;
+	border-radius: 20px 20px 75px 75px;
+}
+
+.stick {
+	width: 60px;
+	height: 72px;
+	background: #ecaa7d;
+	border-top: 12px solid #db9e74;
+	margin-left: 37.5%;
+	border-radius: 0px 0px 150px 150px;
+}
+
+.ice-cream {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.glare {
+	position: relative;
+	left: 170px;
+	bottom: 20px;
+	transform: rotate(-38deg);
+}
+
+.face {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 58px;
+}
+
+.eyes {
+	display: flex;
+	justify-content: space-between;
+	width: 145px;
+}
+
+.eye {
+	position: relative;
+}
+
+.eye::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	border-radius: 100%;
+}
